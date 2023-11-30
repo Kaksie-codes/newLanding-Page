@@ -182,8 +182,7 @@
     .nav__menu .nav__list{ 
       position: fixed;     
       display: flex;
-      top: -100%;
-      top: -50%;
+      top: -100%;      
       left: 0;
       flex-direction: column;
       text-align: center;
@@ -273,7 +272,7 @@
 .services__section .vector-img{
   position: absolute;
   z-index: -1;
-  top: 13rem;
+  top: 33rem;
 }
 .services__section .services__tabs--wrapper{
   display: grid;
@@ -321,6 +320,9 @@
   .services__section .services__tabs--wrapper{
     grid-template-columns: repeat(2, 1fr);
   }
+  .services__section .vector-img{
+    top: 15rem;
+  }
 }
 
 @media screen and (min-width: 1024px){
@@ -330,7 +332,8 @@
 
   /*=============== HERO SECTION ===============*/
   .hero-section .left{
-    text-align: left;    
+    text-align: left;  
+    margin-inline: auto;  
   }
   .hero-section .container{
     display: grid;
